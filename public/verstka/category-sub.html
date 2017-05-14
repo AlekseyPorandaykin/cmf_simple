@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+
+	<meta name="viewport" content="width=device-width">
+
+	<title>«Элит-мебель»</title>
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<meta name="theme-color" content="#5d473b">
+	<meta name="msapplication-navbutton-color" content="#5d473b">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#5d473b">
+
+	<link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="ie.css">
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<!-- BEGIN HEADER -->
+		<div class="header">
+			<div class="cnt">
+				<div class="header__left">
+					<div class="header__contacts">
+						<span><b>Тверь:</b> <strong>+7 (4822) 41 81 82</strong></span>
+						<span><b>Москва:</b> <strong>+7 (495) 41 81 82</strong></span>
+						<span class="header__call">Заказать<br> обратный звонок</span>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__search">
+						<span class="button-search"></span>
+						<div class="search">
+							<form>
+								<input type="text" placeholder="найти: мягкая мебель">
+							</form>
+						</div>
+					</div>
+					<div class="header__auth">
+						<a href="#">Вход</a> <a href="#">Регистрация</a>
+					</div>
+					<div class="header__cart">
+						<a href="#">Корзина пуста</a>
+					</div>
+				</div>
+				<div class="header__center">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- END HEADER -->
+
+		<!-- BEGIN INNER -->
+		<div class="inner"></div>
+		<!-- END INNER -->
+
+		<!-- BEGIN NAV -->
+		<div class="nav nav_inner">
+			<div class="cnt">
+				<ul>
+					<li><a href="#">Гостинная</a></li>
+					<li class="parent">
+						<a href="#">Спальня</a>
+						<ul>
+							<div class="nav__column">
+								<li><a href="#">Гостинные стенки <span>56</span></a></li>
+								<li><a href="#">Шкафы для посуды <span>56</span></a></li>
+								<li><a href="#">Журнальные столы <span>56</span></a></li>
+								<li><a href="#">Тумбы под телевизор <span>56</span></a></li>
+								<li><a href="#">Консоли <span>56</span></a></li>
+							</div>
+							<div class="nav__column">
+								<li><a href="#">Стеллажи <span>56</span></a></li>
+								<li><a href="#">Буфеты <span>56</span></a></li>
+								<li><a href="#">Комоды дизайнерские <span>56</span></a></li>
+								<li><a href="#">Декоративные камины <span>56</span></a></li>
+								<li><a href="#">Навесные потолки <span>56</span></a></li>
+							</div>
+							<div class="nav__column">
+								<li><a href="#">Матрассы с пражинами <span>56</span></a></li>
+								<li><a href="#">Матриссы безпружанные <span>56</span></a></li>
+								<li><a href="#">Детские матрассы <span>56</span></a></li>
+								<li><a href="#">Подушки для сна <span>56</span></a></li>
+							</div>
+						</ul>
+					</li>
+					<li><a href="#">Прихожая</a></li>
+					<li><a href="#">Кабинет</a></li>
+					<li><a href="#">Диваны</a></li>
+					<li><a href="#">Кресла и пуфы</a></li>
+					<li><a href="#">Стол и стулья</a></li>
+					<li><a href="#">Матрасы</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Ротонг и плетение</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+
+		<div class="cnt">
+			<!-- BEGIN FILTER -->
+			<div class="filter active">
+				<div class="cnt">
+					<div class="filter__block clearix">
+						<div class="filter__column1">
+							<span class="filter__arrs"></span><input type="text" class="filter__input-big" placeholder="Выбирите категорию или ведите название товара">
+							<div class="filter__radios">
+								<label>
+									<input type="radio" name="sort" checked="checked"><span class="radio"></span> по цене
+								</label>
+								<label>
+									<input name="sort" type="radio"><span class="radio"></span> по производителю
+								</label>
+								<label>
+									<input name="sort" type="radio"><span class="radio"></span> по назначению
+								</label>
+								<label>
+									<input name="sort" type="radio"><span class="radio"></span> по сроку заказа
+								</label>
+							</div>
+						</div>
+						<div class="filter__column2">
+							<div class="filter__slider">
+								<input type="text" id="range-slider">
+							</div>
+							<div class="filter__checks">
+								<label>
+									<input type="checkbox" name="order"><span class="checkbox"></span> по убыванию
+								</label>
+							</div>
+						</div>
+						<div class="filter__column3">
+							<select class="filter__select">
+								<option>Стиль</option>
+								<option>Стиль</option>
+								<option>Стиль</option>
+								<option>Стиль</option>
+							</select>
+							<select class="filter__select">
+								<option>Материал</option>
+								<option>Материал</option>
+								<option>Материал</option>
+								<option>Материал</option>
+							</select>
+							<select class="filter__select">
+								<option>Хиты продаж</option>
+								<option>Хиты продаж</option>
+								<option>Хиты продаж</option>
+								<option>Хиты продаж</option>
+							</select>
+						</div>
+						<div class="filter__column4">
+							<a class="filter__update" href="#">Обновить</a>
+							<input type="submit" class="filter__submit" value="Найти">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END FILTER -->
+
+			<!-- BEGIN FILTER-VIEW -->
+			<div class="filter-view">
+				<a href="#" class="active">скрыть фильтр</a>
+			</div>
+			<!-- END FILTER-VIEW -->
+
+			<!-- BEGIN BREADCRUMBS -->
+			<div class="breadcrumbs">
+				<a href="#">Главная</a> <span>/</span> <a href="#">спальни</a> <span>/</span> Сервис
+			</div>
+			<!-- END BREADCRUMBS -->
+
+			<!-- BEGIN TITLE -->
+			<div class="title">
+				<h1>Спальня<span>(123)</span></h1>
+			</div>
+			<!-- END TITLE -->
+
+			<!-- BEGIN CATEGORIES -->
+			<div class="categories">
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+							<span class="categories__label categories__label_hit">Хит продаж</span>
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+							<span class="categories__label categories__label_availability">В наличии</span>
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+							<span class="categories__label categories__label_hit">Хит продаж</span>
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+							<span class="categories__label categories__label_deal">Спецпредложение</span>
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+							<span class="categories__label categories__label_deal">Спецпредложение</span>
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__item">
+					<div class="categories__cnt">
+						<a href="#" class="categories__img">
+							<img src="img/c.jpg" alt="">
+						</a>
+						<div class="categories__block">
+							<div class="categories__name">Гостиная Наполи М. Ком...</div>
+							<div class="categories__price">38 789 руб.</div>
+						</div>
+						<div class="categories__info">
+							<div class="categories__left">
+								<div class="categories__name">Гостиная Наполи М. Компоновка 6</div>
+								<div class="categories__description">
+									Производитель:Эдем<br>
+									Размер:210*212*160(ш*г*в) (см)<br>
+									Серия:Спальня Aurora
+								</div>
+							</div>
+							<div class="categories__right">
+								<div class="categories__price">
+									38 789 руб.
+									<s>56 908 руб.</s>
+								</div>
+								<div class="categories__buttons">
+									<a href="#" class="categories__detail"></a>
+									<a href="#" class="categories__add"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END CATEGORIES -->
+
+			<!-- BEGIN PAGINATION -->
+			<div class="pagination clearfix">
+				<div class="pagination__left">
+					<span class="pagination__current">1</span>
+					<a href="#" class="pagination__num">2</a>
+					<a href="#" class="pagination__num">3</a>
+					<a href="#" class="pagination__num">4</a>
+					<a href="#" class="pagination__num">5</a>
+					<a href="#" class="pagination__num">6</a>
+					<a href="#" class="pagination__next">Вперед</a>
+				</div>
+				<div class="pagination__right">
+					Показывать по: <a href="#">20</a> <b>40</b>
+				</div>
+			</div>
+			<!-- END PAGINATION -->
+
+			<!-- BEGIN KEYWORDS -->
+			<div class="keywords">
+				<ul>
+					<li><a href="#">Лагуна (Барановичи, Брестская обл.)</a></li>
+					<li><a href="#">Домотека</a></li>
+					<li><a href="#">Zoom Mebel</a></li>
+					<li><a href="#">Астрон</a></li>
+					<li><a href="#">Дебют</a></li>
+					<li><a href="#">Кострома-Мебель</a></li>
+					<li><a href="#">Мебель-Москва</a></li>
+					<li><a href="#">Орматек</a></li>
+					<li><a href="#">Заречье</a></li>
+					<li><a href="#">Три Я</a></li>
+					<li><a href="#">Азбука Мебели</a></li>
+					<li><a href="#">Новый Стиль</a></li>
+					<li><a href="#">Armos</a></li>
+					<li><a href="#">Торговля и сервис</a></li>
+					<li><a href="#">Багратион</a></li>
+					<li><a href="#">Анкор</a></li>
+					<li><a href="#">Лером</a></li>
+					<li><a href="#">Tomas</a></li>
+					<li><a href="#">38 попугаев (Ижевск)</a></li>
+					<li><a href="#">Глазовская мебельная фабрика</a></li>
+					<li><a href="#">BRW (Gerbor)</a></li>
+					<li><a href="#">М - Стиль</a></li>
+					<li><a href="#">Мебелик</a></li>
+					<li><a href="#">Юта</a></li>
+					<li><a href="#">Виталь</a></li>
+					<li><a href="#">Малина (Ижевск)</a></li>
+					<li><a href="#">Экодизайн</a></li>
+					<li><a href="#">Фран</a></li>
+					<li><a href="#">Протон</a></li>
+					<li><a href="#">Альтерия</a></li>
+				</ul>
+			</div>
+			<!-- END KEYWORDS -->
+		</div>
+
+		<!-- BEGIN FOOTER -->
+		<div class="footer">
+			<div class="cnt">
+				<div class="footer__top clearfix">
+					<div class="footer__copyright">
+						Все права защищены.<br>
+						© «Элит-мебель», 2015
+						<img src="img/qd.png" alt="">
+					</div>
+					<div class="footer__menu footer__menu_pos1">
+						<div class="footer__title">Элит-мебель</div>
+						<ul>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Магазины</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Сотрудничество</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__menu footer__menu_pos2">
+						<div class="footer__title">Сервис</div>
+						<ul>
+							<li><a href="#">Наличие товара</a></li>
+							<li><a href="#">Возврат товара</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Работа с браком</a></li>
+							<li><a href="#">Кредит</a></li>
+							<li><a href="#">Подъём и установка</a></li>
+							<li><a href="#">Оплата</a></li>
+						</ul>
+					</div>
+					<div class="footer__menu footer__menu_pos3">
+						<div class="footer__title">Покупателям</div>
+						<ul>
+							<li><a href="#">Акции и скидки</a></li>
+							<li><a href="#">Накопление бонусов</a></li>
+							<li><a href="#">Помощник</a></li>
+							<li><a href="#">Личный каинет</a></li>
+						</ul>
+					</div>
+					<div class="footer__menu footer__menu_pos4">
+						<div class="footer__title">Партнеры</div>
+						<ul>
+							<li><a href="#">mebelberi.ru</a></li>
+							<li><a href="#">mebel3shop.ru</a></li>
+							<li><a href="#">klimentina.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom clearifx">
+					<div class="footer__map">
+						<a href="#">– карта сайта</a>
+					</div>
+					<div class="footer__payment">
+						– оплата картами
+					</div>
+					<div class="footer__author">
+						<a href="#"><img src="img/author.png" alt="">– дизайн сайта</a>
+					</div>
+					<div class="footer__socialize">
+						<a href="#" class="fb"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="in"></a>
+						<a href="#" class="yt"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END FOOTER -->
+	</div>
+
+	<!-- BEGIN MODALS -->
+	<div class="modals hidden">
+		<div class="modal" id="modal-call">
+			<div class="modal__title">Обратный звонок</div>
+			<div class="modal__wrap-input">
+				<input type="text" class="input" placeholder="Ваше имя">
+				<span class="required">*</span>
+				<input type="text" class="input" placeholder="Телефон">
+				<span class="required">*</span>
+			</div>
+			<div class="modal__wrap-input">
+				<textarea class="textarea" placeholder="Дополнительные сведенья"></textarea>
+			</div>
+			<div class="modal__button">
+				<input type="submit" class="modal__submit" value="Отправить">
+			</div>
+		</div>
+		<div class="modal modal_review" id="modal-review">
+			<div class="modal__title">Отзыв о товаре</div>
+			<div class="modal__name">Кровать Корсика</div>
+			<div class="modal__wrap-input">
+				<textarea class="textarea" placeholder="Ваши впечатления о товаре."></textarea>
+			</div>
+			<div class="modal__wrap-input">
+				<input type="text" class="input input_name" placeholder="Ваше имя">
+				<input type="text" class="input input_age" placeholder="Возраст">
+				<input type="text" class="input input_city" placeholder="Город">
+			</div>
+			<div class="modal__wrap-rating clearfix">
+				Общее впечатление о товаре:
+				<div class="modal__rating">
+					<span class="active"></span>
+					<span class="active"></span>
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="modal__button">
+				<input type="submit" class="modal__submit" value="Готово">
+				<span class="modal__thanks">Спасибо!</span>
+			</div>
+		</div>
+	</div>
+	<!-- END MODALS -->
+
+	<script src="js/jquery-1.12.0.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/magnific-popup.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--[if lt IE 10]>
+		<script src="js/placeholder.js"></script>
+	<![endif]-->
+</body>
+</html>
