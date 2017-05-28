@@ -27,4 +27,10 @@ Route::group(['prefix' => 'admin'], function () {
         return view('welcome');
     });
     Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/pages', 'Admin\PagesController@index')->name('pages');
+    Route::get('/pages/new', 'Admin\PagesController@newPage')->name('pages-new');
+
+    Route::post('/pages/add', 'Admin\PagesController@addPage')->name('add-page');
+
 });

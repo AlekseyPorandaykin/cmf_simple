@@ -38,12 +38,9 @@
                 @if (Route::has('login'))
                     <div class="top-right links">
                         @if (Auth::check())
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 Выйти
                             </a>
-
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
                             </form>
@@ -76,6 +73,7 @@
 
         <div class="col-md-10">
             <div class="well well-lg">
+                @include('admin-page.common.errors')
                 @yield("content")
             </div>
 
