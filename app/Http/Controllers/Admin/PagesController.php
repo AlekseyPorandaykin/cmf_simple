@@ -52,4 +52,15 @@ class PagesController extends Controller
 
         return redirect('/admin/pages');
     }
+
+    public function  editPage(Request $request, Page $page)
+    {
+
+    }
+
+    public function  deletePage(Request $request, $page)
+    {
+        Page::deletePage($page);
+        return redirect('/admin/pages');
+    }
 }

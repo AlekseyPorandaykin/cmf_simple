@@ -26,9 +26,17 @@
                         <td>{{$itemPage->name}}</td>
                         <td>{{$itemPage->alias}}</td>
                         <td>
-                            <a href="" type="submit"  class="btn btn-success">
+                            <a href="/admin/pages/edit/{{$itemPage->id}}" type="submit"  class="btn btn-success">
                                Править
                             </a>
+                            <br>
+                            <form action="/admin/page/delete/{{ $itemPage->id }}" method="POST">
+                                {{ csrf_field() }}
+                                {{ method_field('DELETE') }}
+
+                                <button class="btn btn-danger">Удалить</button>
+                            </form>
+
                         </td>
                     </tr>
             @endforeach

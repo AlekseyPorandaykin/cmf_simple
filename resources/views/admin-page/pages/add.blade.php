@@ -22,6 +22,23 @@
         </div>
     </div>
     <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="active" id="optionsRadios1" value="1" checked>
+                    Активировать
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="active" id="optionsRadios2" value="0">
+                    Деактивировать
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <div class="checkbox">
                 <label>
