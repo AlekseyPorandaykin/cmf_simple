@@ -32,6 +32,33 @@ class PagesController extends Controller
     }
 
     public function addPage(Request $request){
+        $data = $this->checkDatePage($request);
+        Page::create($data);
+
+        return redirect('/admin/pages');
+    }
+
+    public function  editPage($page)
+    {
+        $page = Page::find($page);
+        return view("admin-page.pages.update", ["page" => $page]);
+    }
+
+    public function  updatePage(Request $request, $id)
+    {
+        $data = $this->checkDatePage($request);
+        Page::find($id)->update($data);
+
+        return redirect('/admin/pages');
+    }
+
+    public function  deletePage(Request $request, $page)
+    {
+        Page::deletePage($page);
+        return redirect('/admin/pages');
+    }
+    public function checkDatePage($request){
+        $result = [];
         $requestData = $request->all();
         $validateData = [
             'name' => 'required|max:255',
@@ -41,26 +68,18 @@ class PagesController extends Controller
             $validateData['alias'] = 'alpha_dash';
         }
         else {
-            $requestData["alias"] = \Slug::make($requestData["name"]);
+            $result["alias"] = \Slug::make($requestData["name"]);
         }
         if (!empty($requestData["linked_products"]) && $requestData["linked_products"] == "on")
         {
-            $requestData["linked_products"] = 1;
+            $result["linked_products"] = 1;
+        }
+        $result["name"] = trim($requestData["name"]);
+        $result["active"] =  $requestData["active"];
+        if (!empty($requestData["text"])){
+            $result["text"] = trim($requestData["text"]);
         }
         $this->validate($request, $validateData);
-        Page::create($requestData);
-
-        return redirect('/admin/pages');
-    }
-
-    public function  editPage(Request $request, Page $page)
-    {
-
-    }
-
-    public function  deletePage(Request $request, $page)
-    {
-        Page::deletePage($page);
-        return redirect('/admin/pages');
+        return $result;
     }
 }

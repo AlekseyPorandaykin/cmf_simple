@@ -29,7 +29,7 @@
                             <a href="/admin/pages/edit/{{$itemPage->id}}" type="submit"  class="btn btn-success">
                                Править
                             </a>
-                            <br>
+                            &nbsp;
                             <form action="/admin/page/delete/{{ $itemPage->id }}" method="POST">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}

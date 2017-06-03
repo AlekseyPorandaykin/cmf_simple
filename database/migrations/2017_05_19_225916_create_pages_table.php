@@ -17,7 +17,7 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('alias');
-            $table->bigInteger('text' )->nullable();
+            $table->longText('text' )->nullable();
             $table->boolean('linked_products')->default(0);
             $table->boolean('active')->default(0);
             $table->timestamps();

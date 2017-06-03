@@ -11,7 +11,7 @@ class Page extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'alias', 'text', 'linked_products', 'active'];
+    protected $fillable = ['name', 'alias', 'text', 'linked_products', 'active', 'created_at', 'updated_at'];
 
     public static function deletePage($idPage)
     {

@@ -32,7 +32,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/pages/new', 'Admin\PagesController@newPage')->name('pages-new');
     Route::get('/pages/edit/{id}', 'Admin\PagesController@editPage');
     Route::delete('/page/delete/{page}', 'Admin\PagesController@deletePage');
-
+    Route::post('/pages/update/{id}', 'Admin\PagesController@updatePage');
 
 
     Route::post('/pages/add', 'Admin\PagesController@addPage')->name('add-page');
